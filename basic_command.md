@@ -61,7 +61,7 @@ The number of restored commands are depends on the value in the $HISTSIZE var in
 
 ` !14 ` - run the command on the line 14 in the history list.
 
-` ~-3 ` - run the fourth command from the bottom of the list.
+` !-3 ` - run the fourth command from the bottom of the list.
 
 ` !! ` - run the last command line.
 
