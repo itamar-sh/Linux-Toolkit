@@ -118,7 +118,42 @@ Or specific var, like 'shell'
 
 ` export -n <var-name> `
 
+## Shell initialization
 
+There are 24 different shell initialization atttributes - login and interactive
+<img
+  src="/images/linus_toolkit_images/shell_configuration/1.png"
+  alt="Alt text"
+  title="Optional title"
+  style="margin: 0 auto;" width="971" height="491">
+
+For example - running script is not interactive and using ssh connection to vm is login.
+
+#### Interactive login shell
+
+In this case - linux execute all commands in the dir: `etc/profile` which execute all command 
+in `etc/profile.d/*.sh`. Those both directories contains the system environment and shell variables.
+
+After that, bash execute `~/.bash_profile` which holds user environment and shell variables.
+This command also execute `~/.bashrc` which holds the User aliases and shell functions.
+
+At the end, the local `~/.bashrc` execute the system wide `etc/bashrc` file which holds system wide aliases and functions.
+
+<img
+  src="/images/linus_toolkit_images/shell_configuration/1.png"
+  alt="Alt text"
+  title="Optional title"
+  style="margin: 0 auto;" width="412" height="447">
+
+#### Interactive Non-login shell
+
+<img
+  src="/images/linus_toolkit_images/shell_configuration/1.png"
+  alt="Alt text"
+  title="Optional title"
+  style="margin: 0 auto;" width="417" height="237">
+
+  
 
 
 
