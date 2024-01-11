@@ -67,6 +67,10 @@ The number of restored commands are depends on the value in the $HISTSIZE var in
 
 ` sudo !! ` - can be added as part of command.
 
+` !* ` - bring the arguments and options from the last command.
+
+` !ls ` - executes the last line starting with ls.
+
 #### Search in previous commands
 
 Use ctrl+R and type the requested query.
